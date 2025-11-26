@@ -10,6 +10,11 @@
   <modified_user>-</modified_user>
   <modified_date>2025/11/26 10:28:46.780</modified_date>
   <parameters>
+    <parameter>
+      <name>TRANS_PATH</name>
+      <default_value>${Internal.Job.Filename.Directory}/pentaho_workflow.ktr</default_value>
+      <description>Path to transformation file</description>
+    </parameter>
     </parameters>
   <slaveservers>
     </slaveservers>
@@ -315,7 +320,7 @@
       <attributes/>
       <specification_method>filename</specification_method>
       <trans_object_id/>
-      <filename>${Internal.Job.Filename.Directory}/pentaho_workflow.ktr</filename>
+      <filename>${TRANS_PATH}</filename>
       <transname/>
       <arg_from_previous>N</arg_from_previous>
       <params_from_previous>N</params_from_previous>
